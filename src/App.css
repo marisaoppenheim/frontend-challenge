@@ -1,3 +1,7 @@
+.property {
+  display: flex;
+}
+
 .thumbnail {
   max-height: 200px;
 }
