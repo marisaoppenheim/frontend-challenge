@@ -1,6 +1,13 @@
+## Dependencies:
+
+You will need a non ancient version of node and npm. (Tested on node 10.15.0 and with the version of npm that comes bundled with it)
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+Installs required npm packages
 
 ### `npm start`
 

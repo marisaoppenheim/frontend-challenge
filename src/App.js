@@ -8,24 +8,16 @@ class App extends Component {
     this.state = {
       properties: [],
       fetching: true,
-      error: null,
+      error: null
     };
   }
 
   componentWillMount() {
     fetch("https://interview.domio.io/properties/")
-      .then(
-        res => res.json()
-      )
-      .then(
-        ({ properties }) => this.setState({ properties })
-      )
-      .catch(
-        error => this.setState({ error })
-      )
-      .then(
-        () => this.setState({ fetching: false })
-      )
+      .then(res => res.json())
+      .then(({ properties }) => this.setState({ properties }))
+      .catch(error => this.setState({ error }))
+      .then(() => this.setState({ fetching: false }));
   }
 
   render() {
